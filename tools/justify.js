@@ -25,7 +25,9 @@ if (document) {
 		</svg>
 	`;
 
-	document.body.appendChild(iconset);
+	window.addEventListener('load', () => {
+		document.body.appendChild(iconset);
+	});
 }
 
 class WysiwygToolJustify extends WysiwygTool {
