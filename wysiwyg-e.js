@@ -42,7 +42,9 @@ if (document) {
 		</svg>
 	`;
 
-	document.body.appendChild(iconset);
+	window.addEventListener('load', () => {
+		document.body.appendChild(iconset);
+	});
 }
 
 export class WysiwygE extends PolymerElement {
